@@ -1,0 +1,188 @@
+8
+
+dir
+10359
+svn://192.168.10.205/androidApp/src/shopping/src/com/baiyjk/shopping
+svn://192.168.10.205
+
+
+
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+543a5699-e058-4be7-a04a-a998e6b6ab3f
+
+.DS_Store
+file
+
+
+
+
+2013-07-08T09:43:05.000000Z
+9e1501b67972e8be420f80a312e3a9b6
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+has-props
+
+AccountActivity.java
+file
+
+
+
+
+2013-07-05T08:43:57.000000Z
+da587624319f2db21df7febf8c264645
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+BottomNavigationTabhostAvtivity.java
+file
+
+
+
+
+2013-07-05T10:33:29.000000Z
+fcc0240ecdf2e216a904f7cf8f8cf755
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+CategoryActivity.java
+file
+
+
+
+
+2013-07-15T03:11:55.000000Z
+0dcac49ee706535aa893bdd4e3fa600b
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+HomeActivity.java
+file
+
+
+
+
+2013-07-29T02:15:37.000000Z
+9756bdca90f9210355801e6f17ac9e5f
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+MainActivity.java
+file
+
+
+
+
+2013-07-30T01:50:21.000000Z
+f9a1ae996edf3d801cf80f535c01a153
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+MyRelativeLayout.java
+file
+
+
+
+
+2013-07-11T02:26:13.000000Z
+141e1085df05b4d4f36cc07724d4172e
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+ProductDetailActivity.java
+file
+
+
+
+
+2013-07-29T02:15:37.000000Z
+600afa82014d0098464a86bae90c562a
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+ProductsListActivity.java
+file
+
+
+
+
+2013-07-29T02:15:37.000000Z
+e8b647634e0f1655d0b6ca76947bc8a4
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+ShoppingcartActivity.java
+file
+
+
+
+
+2013-07-29T02:15:37.000000Z
+96cb0cb546db72281721925e02917fc2
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+ViewPagerHomeAdsItem.java
+file
+
+
+
+
+2013-07-18T02:35:59.000000Z
+4eb85e7b2a51b9a982aae00cc0332646
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+ViewPagerProductDetailImageItem.java
+file
+
+
+
+
+2013-07-18T05:52:13.000000Z
+6bfe9d55642f517e242f8e447ee10a10
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+adapter
+dir
+
+http
+dir
+
+model
+dir
+
+sqlite
+dir
+
+utils
+dir
+

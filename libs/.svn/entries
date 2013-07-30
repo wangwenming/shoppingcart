@@ -1,0 +1,41 @@
+8
+
+dir
+10359
+svn://192.168.10.205/androidApp/src/shopping/libs
+svn://192.168.10.205
+
+
+
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+543a5699-e058-4be7-a04a-a998e6b6ab3f
+
+android-support-v4.jar
+file
+
+
+
+
+2013-07-04T01:21:20.000000Z
+d27300c911b6d4268ff24815699452ce
+2013-07-30T03:09:16.020494Z
+10359
+lyy
+has-props
+

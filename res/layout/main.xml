@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- titlebar -->
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent" 
+        android:layout_height="150dip" 
+        android:id="@+id/head" 
+        android:gravity="center"
+        android:layout_weight="0.95"
+        android:background="#2F7D6D">
+        
+        <TextView android:id="@+id/titlebar"
+            android:gravity="center_horizontal" 
+            android:layout_width="wrap_content" 
+            android:layout_height="40dip" 
+            android:text="@string/app_name"
+            android:textColor="#FFFFFFFF"
+            
+            android:textSize="24sp"> 
+        </TextView> 
+	</LinearLayout>
+	
+    <!-- 动态界面 -->
+	<LinearLayout  
+        android:id="@+id/container"  
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >  
+    </LinearLayout>
+    
+	<!-- 标签按钮 -->
+	<LinearLayout   
+    		android:layout_width="fill_parent"  
+    		android:layout_height="wrap_content">  
+            <RadioGroup  
+                android:id="@+id/tab_group"  
+                android:layout_width="fill_parent"  
+                android:layout_height="wrap_content"  
+                android:gravity="center"  
+                android:paddingTop="6dp"  
+                android:paddingBottom="6dp" 
+                android:orientation="horizontal"
+                android:background="#555754">  
+  
+                
+                <RadioButton
+                    android:id="@+id/main_tab_1"
+                    android:checked="true"  
+                    android:text="@string/bottomNavigationButtonText1" 
+                    android:drawableTop="@drawable/home_selected"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:button="@null"/>    
+  
+                <RadioButton  
+                    android:id="@+id/main_tab_2"
+                    android:text="@string/bottomNavigationButtonText2" 
+                    android:drawableTop="@drawable/category"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:button="@null"/>  
+  
+                <RadioButton  
+                    android:id="@+id/main_tab_3" 
+                    android:text="@string/bottomNavigationButtonText3" 
+                    android:drawableTop="@drawable/mycount"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:button="@null"/>
+  
+                <RadioButton
+                    android:id="@+id/main_tab_4" 
+                    android:text="@string/bottomNavigationButtonText4" 
+                    android:drawableTop="@drawable/shoppingcart"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:button="@null"/>  
+            </RadioGroup>  
+              
+       </LinearLayout> 
+
+</LinearLayout>

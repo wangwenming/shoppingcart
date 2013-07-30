@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF">
+    
+    <!-- 商品列表页titlebar -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#2F7D6D" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back"
+            android:id="@+id/product_list_back"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+            
+        </Button>            
+        <TextView
+            android:id="@+id/product_list_titlebar" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFFFF"
+            
+            android:textSize="24sp" /> 
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/product_list_filter"
+            android:background="@drawable/shoppingcart"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp" />
+
+	</RelativeLayout>
+
+    <!-- 商品列表页排序 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+		<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/pricesort"
+	        android:layout_weight="1"
+	        android:orientation="horizontal">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            
+	            android:gravity="center_horizontal"
+	            
+	            android:text="价格"/>
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/updown_sort"
+	            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+        
+        
+		<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:text="销量"/>
+        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/desc_sort"
+	            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+		<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="1"
+	        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            
+            android:gravity="center_horizontal"
+            android:text="最新"/>
+        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/desc_sort"
+	            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+		<LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1" 
+	        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            
+            android:gravity="center_horizontal"
+            android:text="关注"/>
+        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/focus_sort"
+	            android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <!-- 商品列表 -->
+    <!-- 商品列表加载中... -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="loading ..."
+        android:gravity="center"
+        android:id="@+id/productlistloading"/>
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:id="@id/android:list">
+
+	</ListView>
+</LinearLayout>

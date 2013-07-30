@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/category_layout"
+    android:background="#FFFFFF">
+    
+    <com.baiyjk.shopping.MyRelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myRelativeLayout1"
+        android:background="#FFFFFF">
+        
+		<ListView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/category_level1_listview">
+		    
+		</ListView>
+	</com.baiyjk.shopping.MyRelativeLayout>
+		
+	<com.baiyjk.shopping.MyRelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:id="@+id/myRelativeLayout2"
+        android:layout_alignTop="@id/myRelativeLayout1"
+        android:layout_toRightOf="@id/myRelativeLayout1"
+        android:background="#E3E3E3">
+		<ListView 
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:id="@+id/category_level2_listview"
+		    >
+		    
+		</ListView>
+	</com.baiyjk.shopping.MyRelativeLayout>
+</RelativeLayout>

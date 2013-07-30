@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baiyjk.shopping"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <!-- android:theme="@style/AppTheme" --> 
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.NoTitle"
+        android:screenOrientation="portrait">
+        <activity
+            android:name="com.baiyjk.shopping.HomeActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity 
+            android:name="com.baiyjk.shopping.BottomNavigationTabhostAvtivity">
+            
+        </activity>
+        <activity android:name="com.baiyjk.shopping.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.baiyjk.shopping.ShoppingcartActivity"
+           
+            android:windowSoftInputMode="adjustPan">
+            <!--  android:windowSoftInputMode = "adjustResize"> -->
+        </activity>
+        <activity
+            android:name="com.baiyjk.shopping.AccountActivity"
+            android:label="@string/account_name" >   
+        </activity>
+        <activity
+            android:name="com.baiyjk.shopping.CategoryActivity"
+            android:label="@string/category_name" >   
+        </activity>
+        <activity
+            android:name="com.baiyjk.shopping.ProductsListActivity">
+        </activity>
+        <activity
+            android:name="com.baiyjk.shopping.ProductDetailActivity">
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>  
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest>

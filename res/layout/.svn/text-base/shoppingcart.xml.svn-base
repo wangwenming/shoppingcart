@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 购物车 titlebar -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#2F7D6D" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:id="@+id/cart_back"
+            android:layout_alignParentLeft="true" />
+             
+        <TextView
+            android:id="@+id/product_detail_titlebar" 
+            android:layout_width="wrap_content" 
+            android:layout_height="40dip" 
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:text="购物车"
+            android:textSize="24sp"/> 
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cart_edit"
+            android:text="编辑" />
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/cart_edit"
+            android:id="@+id/cart_clear"
+            android:text="清空" />
+        
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/cart_finish"
+            android:text="完成" 
+            android:visibility="invisible"/>
+	</RelativeLayout>
+
+    <!-- 购物车 总计-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/cart_size"
+            android:layout_alignParentLeft="true"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/cart_value"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+    
+    <!-- 商品列表加载中... -->
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="loading ..."
+        android:gravity="center"
+        android:id="@+id/cart_list_loading"/>
+    
+    <!-- 购物车 详情 -->
+    <RelativeLayout
+	    android:id="@+id/RelativeLayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical">
+        
+	    <ListView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" 
+	        android:id="@id/android:list"
+	        >
+	
+		</ListView>
+	</RelativeLayout>
+    <!-- 结算按钮 -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="去结算"
+        android:textSize="14sp" 
+        android:id="@+id/cart_checkout"
+        android:background="#FF0000">
+
+	</Button>
+</LinearLayout>

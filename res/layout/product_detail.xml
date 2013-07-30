@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    <!-- 商品列表页titlebar -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#2F7D6D" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_detail_back"
+            android:layout_alignParentLeft="true" 
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"/>
+             
+        <TextView
+            android:id="@+id/product_detail_titlebar" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            
+            android:textSize="18sp" 
+            android:maxLines="1"
+            android:maxLength="6"
+            android:ellipsize="end"/> 
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/product_detail_cart"
+            android:background="@drawable/shoppingcart"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/product_detail_cart_number"
+            android:text=""
+            android:textSize="12sp"
+            android:textColor="#FF0000"
+            android:gravity="top|left"/>
+
+	</RelativeLayout>
+	
+	<!-- 商品图片 -->
+    <FrameLayout 
+    		android:layout_width="fill_parent"
+    		android:layout_height="140dip"
+    		android:background="#FFFFFF">
+	    
+	    <android.support.v4.view.ViewPager
+	        android:id="@+id/product_detail_images_viewpager"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center">
+	        
+	    </android.support.v4.view.ViewPager>
+
+	    <LinearLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="bottom|center"
+	        android:layout_marginBottom="3dip"
+	        android:layout_marginRight="3dip"
+	        android:id="@+id/product_image_dot_container"
+	        android:orientation="horizontal" >
+
+	        <View 
+	            android:id="@+id/dot"	
+	            android:layout_width="5dip"
+	            android:layout_height="5dip"
+	            android:layout_marginLeft="2dip"
+	            android:layout_marginRight="2dip"
+	            android:background="@drawable/dot_focused"/>
+	            
+	    </LinearLayout>
+    </FrameLayout>
+    
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/product_detail_name"
+	    android:textSize="20sp"/>
+	
+	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/product_detail_desc"
+	    android:textSize="12sp"/>
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:id="@+id/product_detail_price"/>
+
+	</RelativeLayout>
+	
+	<!-- 加入购物车、 收藏、 分享 -->
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="horizontal">
+
+		<Button
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/add_to_cart"
+		    android:text="放入购物车" />
+	
+		<Button
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/add_to_wish"
+		    android:text="加入收藏" />
+	
+		<Button
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:id="@+id/product_detail_share"
+		    android:text="分享"/>
+
+		
+	</LinearLayout>
+</LinearLayout>
